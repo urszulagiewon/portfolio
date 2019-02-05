@@ -136,12 +136,12 @@ header {
       background-repeat: no-repeat;
       background-size: cover; }
     header #carousel-box #one {
-      background-image: url(/images/kolor-kryjacy.png), url(/images/duch-lasu-01.jpg);
+      background-image: url(../images/kolor-kryjacy.png), url(../images/duch-lasu-01.jpg);
       background-blend-mode: normal; }
     header #carousel-box #two {
-      background-image: url(/images/duch-lasu-05.jpg); }
+      background-image: url(../images/duch-lasu-05.jpg); }
     header #carousel-box #three {
-      background-image: url(/images/duch-ziemi.jpg); }
+      background-image: url(../images/duch-ziemi.jpg); }
 
 @media (max-width: 1024px) {
   header #carousel-box .title {
@@ -178,7 +178,7 @@ header {
     width: 15rem;
     height: 15rem;
     transition: 1.5s;
-    background-image: url(/images/u_giewon_foto.jpg);
+    background-image: url(../images/u_giewon_foto.jpg);
     background-size: contain;
     transform: translateY(20%); }
     #about .image:hover {
@@ -484,21 +484,21 @@ header {
       #portfolio .portfolio-box .info:hover {
         opacity: 1; }
     #portfolio .portfolio-box #digital {
-      background-image: url(/images/duch.jpg); }
+      background-image: url(../images/duch.jpg); }
     #portfolio .portfolio-box #manip {
-      background-image: url(/images/duch-lasu-05.jpg); }
+      background-image: url(../images/duch-lasu-05.jpg); }
     #portfolio .portfolio-box #infogr {
-      background-image: url(/images/duch-ziemi.jpg); }
+      background-image: url(../images/duch-ziemi.jpg); }
     #portfolio .portfolio-box #web {
-      background-image: url(/images/beard-businessman-coffee-926390.jpg); }
+      background-image: url(../images/beard-businessman-coffee-926390.jpg); }
     #portfolio .portfolio-box #print {
-      background-image: url(/images/duch-ziemi.jpg); }
+      background-image: url(../images/duch-ziemi.jpg); }
     #portfolio .portfolio-box #drawing {
-      background-image: url(/images/beard-businessman-coffee-926390.jpg); }
+      background-image: url(../images/beard-businessman-coffee-926390.jpg); }
     #portfolio .portfolio-box #photos {
-      background-image: url(/images/duch-lasu-05.jpg); }
+      background-image: url(../images/duch-lasu-05.jpg); }
     #portfolio .portfolio-box #btl {
-      background-image: url(/images/duch.jpg); }
+      background-image: url(../images/duch.jpg); }
   #portfolio .project-info {
     background-color: white;
     padding: 1rem;
@@ -584,7 +584,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/contact.jpg);
+  background-image: url(../images/contact.jpg);
   padding: 5rem 0; }
   #contact label {
     display: none; }
