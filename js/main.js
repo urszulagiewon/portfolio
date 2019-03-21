@@ -20,12 +20,36 @@ $(function () {
     });
 
     /* show numbers*/
-    $("#about h6").on("click", function () {
-        $(".numbers").show(1000);
+    function unhideElement(toHide, toShow) {
+        toHide.toggle();
+        toShow.show();
+    }
+
+    $(".one img").on("click", function () {
+        unhideElement($(".one img"), $(".one p"));
     });
-    $("#about h6").on("dblcick", function () {
-        $(".numbers").hide(1000);
-    })
+    $(".one p").on("click", function () {
+        unhideElement($(".one p"), $(".one img"));
+    });
+    $(".two img").on("click", function () {
+        unhideElement($(".two img"), $(".two p"));
+    });
+    $(".two p").on("click", function () {
+        unhideElement($(".two p"), $(".two img"));
+    });
+    $(".three img").on("click", function () {
+        unhideElement($(".three img"), $(".three p"));
+    });
+    $(".three p").on("click", function () {
+        unhideElement($(".three p"), $(".three img"));
+    });
+    $(".four img").on("click", function () {
+        unhideElement($(".four img"), $(".four p"));
+    });
+    $(".four p").on("click", function () {
+        unhideElement($(".four p"), $(".four img"));
+    });
+
     /* Display exprience */
     function displayElement(toHide, showOne, showTwo) {
         toHide.hide();
@@ -75,17 +99,17 @@ $(function () {
         let grafik = $("#grafik");
         let front = $("#front");
         $(".front").on("click", function () {
-            grafik.toggle();
-            front.show();
+            front.toggle();
+            grafik.hide();
         });
         $(".grafik").on("click", function () {
-            front.toggle();
-            grafik.show();
+            grafik.toggle();
+            front.hide();
         });
     }
     switchJob();
-    
-  $("#g-form").validate({
+
+    $("#g-form").validate({
         rules: {
             contactName: {
                 required: true,
@@ -98,8 +122,7 @@ $(function () {
             },
             phone: {
                 required: true,
-                tel: true,
-                minlength: 9,
+                number: true,
                 maxlength: 9
             },
             message: {
@@ -107,7 +130,7 @@ $(function () {
                 minlength: 10,
                 maxlength: 1000
             }
-            
+
         },
         messages: {
             contactName: {
@@ -121,7 +144,7 @@ $(function () {
             },
             phone: {
                 required: "To pole jest obowiązkowe",
-                minlength: "Numer za krótki",
+                number: "Numer musi składać się z cyfr",
                 maxlength: "Numer za długi"
             },
             message: {
@@ -130,7 +153,9 @@ $(function () {
                 maxlength: "Trochę za długo ;)"
             }
         }
-        
     });
-
+    /*Mobile menu*/
+    $("#mobile-nav").on("click", function () {
+        $("#mobile-nav .nav-list").toggle();
+    });
 });

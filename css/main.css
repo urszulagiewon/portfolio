@@ -178,7 +178,7 @@ header {
     width: 15rem;
     height: 15rem;
     transition: 1.5s;
-    background-image: url(../images/u_giewon_foto.jpg);
+    background-image: url(../images/ufoto.jpg);
     background-size: contain;
     transform: translateY(20%); }
     #about .image:hover {
@@ -202,37 +202,40 @@ header {
     font-size: 1.2rem;
     font-weight: 500;
     color: #99D327;
-    text-decoration: underline;
-    cursor: pointer; }
+    text-decoration: underline; }
   #about .numbers {
-    display: none;
+    display: block;
     width: 100%;
     margin-top: 1.45rem; }
     #about .numbers .column {
       width: 24%;
       display: inline-block;
-      text-align: center; }
+      text-align: center;
+      /*        i {
+                color: white;
+                width: 3rem;
+                border-radius: 50%;
+                background-color: $light-green;
+                padding: .9rem;
+                font-size: 1.34rem;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+                transition: 1.55s;
+                &:hover {
+                    background-color: $light-gray;
+                    color: $text-gray;
+                    border-radius: 0;
+                }*/ }
+      #about .numbers .column img {
+        cursor: pointer; }
       #about .numbers .column p {
-        text-align: center; }
-      #about .numbers .column i {
-        color: white;
-        width: 3rem;
-        border-radius: 50%;
-        background-color: #99D327;
-        padding: .9rem;
-        font-size: 1.34rem;
         text-align: center;
-        display: block;
-        margin: 0 auto;
-        transition: 1.55s; }
-        #about .numbers .column i:hover {
-          background-color: #BABABA;
-          color: #020103;
-          border-radius: 0; }
-      #about .numbers .column span {
-        color: #E89D0C;
-        font-weight: 500;
-        font-size: 1.15rem; }
+        display: none; }
+    #about .numbers span {
+      color: #E89D0C;
+      font-weight: 500;
+      font-size: 1.15rem; }
 
 @media (max-width: 1024px) {
   #about {
@@ -258,8 +261,8 @@ header {
   #about {
     margin: 2rem 0rem; }
     #about .image {
-      width: 11rem;
-      height: 11rem;
+      width: 6rem;
+      height: 6rem;
       transform: translateY(0); }
     #about .numbers .column {
       width: 47%; }
@@ -279,9 +282,10 @@ header {
       margin-top: 1rem;
       text-align: center; }
     #about .numbers .column {
-      width: 100%; }
-      #about .numbers .column i {
-        display: inline-block; } }
+      width: 48%; }
+      #about .numbers .column img {
+        max-width: 50%;
+        height: auto; } }
 
 #job {
   width: 100%;
@@ -402,7 +406,8 @@ header {
     #job #front .technology,
     #job #front .more,
     #job #front .else {
-      padding: 1rem 0rem; } }
+      padding: 1rem 0rem;
+      font-size: .75rem; } }
 
 @media (max-width: 769px) {
   #job {
@@ -460,10 +465,6 @@ header {
       #portfolio .portfolio-box .box:hover {
         transform: scale(1.5);
         transition: 1.5s; }
-        #portfolio .portfolio-box .box:hover::after {
-          border-color: #020103;
-          border: 1px solid;
-          outline-offset: -10px; }
     #portfolio .portfolio-box .mask {
       width: 100%;
       height: 100%;
@@ -483,26 +484,28 @@ header {
       transform: translateY(35%); }
       #portfolio .portfolio-box .info:hover {
         opacity: 1; }
+      #portfolio .portfolio-box .info a {
+        color: white; }
     #portfolio .portfolio-box #digital {
       background-image: url(../images/duch.jpg); }
     #portfolio .portfolio-box #manip {
-      background-image: url(../images/duch-lasu-05.jpg); }
+      background-image: url(../images/fotomanipulacja_01.jpg); }
     #portfolio .portfolio-box #infogr {
-      background-image: url(../images/duch-ziemi.jpg); }
+      background-image: url(../images/infografiki_02.jpg); }
     #portfolio .portfolio-box #web {
-      background-image: url(../images/beard-businessman-coffee-926390.jpg); }
+      background-image: url(../images/web_01.jpg); }
     #portfolio .portfolio-box #print {
-      background-image: url(../images/duch-ziemi.jpg); }
-    #portfolio .portfolio-box #drawing {
-      background-image: url(../images/beard-businessman-coffee-926390.jpg); }
+      background-image: url(../images/publikacje_druk.jpg); }
+    #portfolio .portfolio-box #vector {
+      background-image: url(../images/ide.png); }
     #portfolio .portfolio-box #photos {
-      background-image: url(../images/duch-lasu-05.jpg); }
+      background-image: url(../images/zdjecia.jpg); }
     #portfolio .portfolio-box #btl {
-      background-image: url(../images/duch.jpg); }
+      background-image: url(../images/materialy_btl.jpg); }
   #portfolio .project-info {
     background-color: white;
     padding: 1rem;
-    height: 4rem;
+    height: 5rem;
     font-size: 1.05rem;
     font-family: "PT Sans Narrow", sans-serif;
     margin-bottom: 2rem; }
@@ -535,11 +538,16 @@ header {
     text-decoration: underline;
     cursor: pointer; }
   #exper .extra-text {
-    display: none; }
+    display: none;
+    padding-left: 2rem;
+    line-height: 2; }
   #exper .hide {
     display: none;
     color: #FF3B0A;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 2rem; }
   #exper h4 {
     margin: 3rem 0rem 0rem;
     font-size: 1.3rem;
