@@ -1,0 +1,48 @@
+footer {
+    background-color: $text-gray;
+    padding: 2rem 0;
+    color: white;
+    .copyright,
+    .footer-contact,
+    .rights {
+        text-align: center;
+    }
+    .footer-contact {
+        a {
+            color: white;
+        }
+        i {
+            width: 3rem;
+            height: 3rem;
+            border: 1px solid white;
+            padding: 1rem 0;
+            margin: 0rem 1rem;
+            transition: 1.5s;
+            &:hover {
+                color: $text-gray;
+                background-color: white;
+                border: 1px solid $text-gray;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .footer-contact {
+            i {
+                width: 2.4rem;
+                height: 2.4rem;
+                padding: .7rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    footer {
+        .footer-contact {
+            margin: 1rem .5rem;
+        }
+    }
+}

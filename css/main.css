@@ -96,17 +96,18 @@ header {
         padding: .3rem;
         font-family: "PT Sans Narrow", sans-serif;
         font-size: 4rem; }
-      header #carousel-box .title button {
+      header #carousel-box .title .ghost-button {
         background-color: transparent;
         border: 1px solid white;
         color: white;
-        padding: .5rem;
+        padding: .75rem;
         font-size: 1.4rem;
         font-family: "PT Sans Narrow", sans-serif;
         border-radius: 0;
-        min-width: 10rem;
-        transition: 1.5s; }
-        header #carousel-box .title button:hover {
+        width: 10rem;
+        transition: 1.5s;
+        display: inline-block; }
+        header #carousel-box .title .ghost-button:hover {
           border: 1px solid #99D327; }
     header #carousel-box .controlers {
       display: none;
@@ -123,25 +124,6 @@ header {
         header #carousel-box .controlers i:hover {
           color: #E89D0C;
           opacity: 1; }
-    header #carousel-box .carousel-item {
-      width: 100%;
-      height: 75vh;
-      margin: 0px;
-      padding: 0px;
-      display: inline-block; }
-    header #carousel-box #one,
-    header #carousel-box #two,
-    header #carousel-box #three {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    header #carousel-box #one {
-      background-image: url(../images/kolor-kryjacy.png), url(../images/duch-lasu-01.jpg);
-      background-blend-mode: normal; }
-    header #carousel-box #two {
-      background-image: url(../images/duch-lasu-05.jpg); }
-    header #carousel-box #three {
-      background-image: url(../images/duch-ziemi.jpg); }
 
 @media (max-width: 1024px) {
   header #carousel-box .title {

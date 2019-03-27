@@ -1,0 +1,40 @@
+/* Fonts */
+$main-font: 'Diosis', sans-serif;
+$font-size: 15px;
+$font-weight: 400;
+$second-font: 'PT Sans Narrow', sans-serif;
+$fixed: 0px;
+input.error {
+    border: 2px solid $red !important;
+}
+
+label.error {
+    color: white;
+    display: block !important;
+}
+
+.active {
+    display: block;
+}
+.unactive {
+    display: none;
+}
+
+.changeNav {
+    background-color: $light-green;
+    color: $text-gray;
+    opacity: 0.8;
+}
+
+@mixin basic-font {
+    font-family: $main-font;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $text-gray;
+}
+
+@mixin background-picture {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

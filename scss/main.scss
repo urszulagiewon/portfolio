@@ -1,0 +1,21 @@
+@import 'colors';
+@import 'custom';
+@import 'nav';
+@import 'header';
+@import 'about';
+@import 'job';
+@import 'portfolio';
+@import 'exper';
+@import 'contact';
+@import 'footer';
+
+button, a {
+    cursor: pointer;
+}
+
+body { @include basic-font;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px;
+    color: $text-gray;
+}

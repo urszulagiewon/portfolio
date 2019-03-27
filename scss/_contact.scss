@@ -1,0 +1,84 @@
+#contact {
+    label {
+        display: none;
+    }
+    width: 100%;
+    @include background-picture;
+    background-image: url(../images/contact.jpg);
+    padding: 5rem 0;
+    h2 {
+        color: white;
+        font-size: 1.7rem;
+        font-family: $second-font;
+    }
+    .underline {
+        width: 50%;
+        height: 1px;
+        background-color: white;
+        text-align: center;
+        margin: 1rem 25% 1.25rem;
+    }
+    input {
+        width: 100%;
+        height: 3rem;
+        padding: 1rem;
+        border: none;
+        margin: .55rem 0rem;
+        border-radius: 10px;
+        &::placeholder {
+            color: $text-gray;
+            font-size: .9rem;
+            font-family: $second-font;
+        }
+        &:focus {
+            -webkit-box-shadow: -2px -1px 19px -1px rgba(0, 0, 0, 0.72);
+            -moz-box-shadow: -2px -1px 19px -1px rgba(0, 0, 0, 0.72);
+            box-shadow: -2px -1px 19px -1px rgba(0, 0, 0, 0.72);
+            border: 1px solid $text-gray;
+            border-radius: 10px;
+        }
+    }
+    .writing {
+        text-align: right;
+        button {
+            background-color: transparent;
+            border: 1px solid white;
+            padding: .55rem;
+            margin: .55rem 0;
+            color: white;
+            font-family: $second-font;
+            font-size: 1.3rem;
+            min-width: 30%;
+            transition: 1.5s;
+            &:hover {
+                background-color: $light-green;
+                border: 1px solid $light-green;
+            }
+        }
+    }
+    input#message {
+        width: 100%;
+        height: 6rem;
+        border: none;
+        resize: none;
+        margin: .55rem 0rem;
+        border-radius: 10px;
+        padding: 1rem;
+        &::placeholder {
+            color: $text-gray;
+            font-size: .9rem;
+            font-family: $second-font;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #contact {
+        padding: 2rem 0;
+        .writing {
+            button {
+                width: 50%;
+            }
+        }
+    }
+}

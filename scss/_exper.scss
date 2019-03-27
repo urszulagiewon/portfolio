@@ -1,0 +1,95 @@
+#exper {
+    background-color: $section-color;
+    padding: 5rem 0;
+    h2 {
+        color: $light-green;
+        font-size: 1.7rem;
+    }
+    .underline {
+        width: 50%;
+        height: 1px;
+        background-color: $light-green;
+        text-align: center;
+        margin: 1rem 25% 1.25rem;
+    }
+    h5 {
+        font-weight: 500;
+        margin: 1rem 0;
+    }
+    .show-more {
+        color: $red;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .extra-text {
+        display: none;
+        padding-left: 2rem;
+        line-height: 2;
+    }
+    .hide{
+        display: none;
+        color: $red;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding-right: 2rem;
+    }
+    h4 {
+        margin: 3rem 0rem 0rem;
+        font-size: 1.3rem;
+        color: $light-green;
+    }
+    a {
+        img {
+            height: 3rem;
+            width: auto;
+            border: none;
+            margin: 0rem 1rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #exper {
+        padding: 2rem;
+        h5 {
+            font-size: 1.15rem;
+        }
+        h4 {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #exper {
+        padding: 2rem .5rem;
+        h5 {
+            font-size: 1.25rem;
+        }
+        h4 {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    #exper {
+        padding: 2rem 0rem;
+        h5 {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        h4 {
+            margin-top: 1rem;
+        }
+        a {
+            img {
+                width: 30%;
+                height: auto;
+                margin: .25rem;
+            }
+        }
+
+    }
+}

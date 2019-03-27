@@ -1,0 +1,221 @@
+#job {
+    width: 100%;
+    margin: $fixed;
+    padding: 5rem 0rem;
+    .grafik,
+    .front {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        color: white;
+        font-family: $second-font;
+        font-size: 1.2rem;
+        height: 3rem;
+        padding: 1rem;
+        margin-top: 1px;
+        cursor: pointer;
+    }
+    .grafik {
+        background-color: $light-green;
+        transition: 1.5s;
+        &:hover {
+            background-color: transparent;
+            color: $light-green;
+            border-radius: 0;
+        }
+    }
+    .front {
+        background-color: $orange;
+        transition: 1.5s;
+        &:hover {
+            background-color: transparent;
+            color: $orange;
+            border-radius: 0;
+        }
+    }
+    .underline {
+        width: 100%;
+        background-color: $light-green;
+        height: 1px;
+        margin-bottom: 2rem;
+    }
+    #grafik {
+        h4 {
+            color: $light-green;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .programs {
+            ul {
+                margin: $fixed;
+                padding: $fixed;
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    padding: 0rem;
+                    img {
+                        width: 3rem;
+                        height: auto;
+                    }
+                    i {
+                        color: $red;
+                        padding-right: .35rem;
+                    }
+                }
+            }
+        }
+        .since,
+        .skill {
+            ul {
+                margin: $fixed;
+                padding: $fixed;
+                li {
+                    list-style: none;
+                    line-height: 2;
+                    &::before {
+                        content: '✔';
+                        height: 2rem;
+                        width: 2rem;
+                        padding: 0 .25rem;
+                        color: $light-green;
+                    }
+                }
+            }
+        }
+        .skill {
+            span {
+                font-size: .9rem;
+            }
+        }
+
+    }
+    #front {
+        display: none;
+        h4 {
+            color: $orange;
+        }
+        .technology {
+            ul {
+                margin: $fixed;
+                padding: $fixed;
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    padding: 0rem;
+                    img {
+                        width: 3rem;
+                        height: auto;
+                    }
+                    i {
+                        color: $red;
+                        padding-right: .35rem;
+                    }
+                }
+            }
+        }
+        .more,
+        .else {
+            ul {
+                padding: $fixed;
+                margin: $fixed;
+                li {
+                    line-height: 2;
+                    list-style: none;
+                }
+            }
+        }
+        .more {
+            ul {
+                li {
+                    &::before {
+                        content: "❴ ❵";
+                        color: $orange;
+                        height: 2rem;
+                        width: 2rem;
+                        padding-right: .35rem;
+
+                    }
+                }
+            }
+        }
+        .else {
+            ul {
+                li {
+                    &::before {
+                        content: "↪";
+                        color: $orange;
+                        height: 2rem;
+                        width: 2rem;
+                        padding-right: .35rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    #job {
+        padding: 2rem 0rem;
+        #grafik {
+            .programs,
+            .since,
+            .skill {
+                font-size: .75rem;
+            }
+            .programs {
+                ul {
+                    li {
+                        img {
+                            width: 2rem;
+                            height: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+        #front {
+            .technology,
+            .more,
+            .else {
+                padding: 1rem 0rem;
+                font-size: .75rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    #job {
+        padding: 2rem 0rem;
+        #grafik {
+            .programs,
+            .since,
+            .skill {
+                padding: 1rem 0rem;
+                text-align: center;
+            }
+        }
+        #front {
+            .technology,
+            .more,
+            .else {
+                padding: 1rem 0rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    #job {
+        padding: 2rem 0;
+        .grafik,
+        .front {
+            width: 50%;
+            display: inline-block;
+        }
+    }
+
+}

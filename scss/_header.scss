@@ -1,0 +1,121 @@
+header {
+    width: 100%;
+    margin: $fixed;
+    padding: $fixed;
+
+    #carousel-box {
+        width: auto;
+        height: 75vh;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        position: relative;
+
+        .title {
+            height: auto;
+            width: 100%;
+            padding-top: 30vh;
+            position: absolute;
+            z-index: 9998;
+
+            h1 {
+                width: 100%;
+                height: auto;
+                color: white;
+                padding: .3rem;
+                font-family: $second-font;
+                font-size: 4rem;
+            }
+
+            .ghost-button {
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                padding: .75rem;
+                font-size: 1.4rem;
+                font-family: $second-font;
+                border-radius: 0;
+                width: 10rem;
+                transition: 1.5s;
+                display: inline-block;
+
+                &:hover {
+                    border: 1px solid $light-green;
+                }
+            }
+        }
+
+        .controlers {
+            display: none;
+            z-index: 9997;
+            padding-top: 65vh;
+            position: absolute;
+            font-size: 2.15rem;
+            color: white;
+            width: 100%;
+
+            i {
+                margin: 0 8rem;
+                opacity: 0.8;
+                transition: 1s;
+
+                &:hover {
+                    color: $orange;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        #carousel-box {
+            .title {
+                padding-top: 27vh;
+
+                h1 {
+                    font-size: 2.9rem;
+                }
+
+                button {
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 0;
+                }
+            }
+
+            .controlers {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        #carousel-box {
+            .title {
+                padding-top: 25vh;
+
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                button {
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 0;
+                }
+            }
+
+            .controlers {
+                display: none;
+            }
+        }
+
+    }
+
+}
