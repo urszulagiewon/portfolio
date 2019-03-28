@@ -519,12 +519,11 @@ header {
     color: #FF3B0A;
     text-decoration: underline;
     cursor: pointer; }
-  #exper .extra-text {
+  #exper .more {
     display: none;
     padding-left: 2rem;
     line-height: 2; }
   #exper .hide {
-    display: none;
     color: #FF3B0A;
     cursor: pointer;
     font-size: 1.2rem;
